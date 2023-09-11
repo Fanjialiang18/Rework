@@ -1,6 +1,12 @@
 package main.Java.LianBiao;
 
 public class Leetcode142 {
+    /**
+     * 环形链表2
+     *
+     * @param head
+     * @return
+     */
     public ListNode detectCycle(ListNode head) {
         ListNode slow,fast;
         slow = head;
