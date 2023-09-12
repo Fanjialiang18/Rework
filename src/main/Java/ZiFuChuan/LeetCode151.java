@@ -6,7 +6,7 @@ package main.Java.ZiFuChuan;
  * 2.反转全部字母
  * 3.反转单词
  *
- * @author fanjl-a
+ * @author clearlove3
  * @date 2023/9/7 19:57
  */
 public class LeetCode151 {

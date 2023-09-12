@@ -1,7 +1,7 @@
 package main.Java.ZiFuChuan;
 
 /**
- * @author fanjl-a
+ * @author clearlove3
  * @date 2023/9/11 13:53
  */
 public class Offer58 {

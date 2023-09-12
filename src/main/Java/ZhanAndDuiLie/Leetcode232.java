@@ -3,7 +3,7 @@ package main.Java.ZhanAndDuiLie;
 import java.util.Stack;
 
 /**
- * @author fanjl-a
+ * @author clearlove3
  * @date 2023/9/11 17:57
  */
 public class Leetcode232 {
@@ -24,8 +24,8 @@ public class Leetcode232 {
         }
 
         public int pop() {
-            if (stackOut.isEmpty()){
-                while (!stackIn.isEmpty()){
+            if (stackOut.isEmpty()) {
+                while (!stackIn.isEmpty()) {
                     stackOut.push(stackIn.pop());
                 }
             }
@@ -33,8 +33,8 @@ public class Leetcode232 {
         }
 
         public int peek() {
-            if (stackOut.isEmpty()){
-                while (!stackIn.isEmpty()){
+            if (stackOut.isEmpty()) {
+                while (!stackIn.isEmpty()) {
                     stackOut.push(stackIn.pop());
                 }
             }

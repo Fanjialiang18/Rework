@@ -3,7 +3,7 @@ package main.Java.ZiFuChuan;
 /**
  * 前K个反转字符串
  *
- * @author fanjl-a
+ * @author clearlove3
  * @date 2023/9/7 16:26
  */
 public class Leetcode541 {
