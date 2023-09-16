@@ -39,7 +39,7 @@ public class LeetCode111 {
      * 递归法
      * 与查最大的不同的是，需要进行判断，因为最大值递归总会走到最后
      * 但是最小值递归如果直接使用一个`Math.min(getMinDepth(root.left), getMinDepth(root.right))+1`语句
-     * 会导致走到一个孩子节点为空就会结束，此时还没到叶子结点
+     * 会导致走到一个孩子节点为空就会认为是最小深度，但是此时还没到叶子结点
      */
     public int getMinDepth(TreeNode root){
         if (root == null){
