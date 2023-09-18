@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LeetCode106 {
-    Map<Integer, Integer> map;
+    private Map<Integer, Integer> map;
 
     /**
      * 根据前序序列和后续序列来构造树
