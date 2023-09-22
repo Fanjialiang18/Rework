@@ -12,6 +12,7 @@ public class LeetCode39 {
     int sum;
 
     LinkedList<Integer> path;
+
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         ans = new ArrayList<>();
         path = new LinkedList<>();
@@ -21,16 +22,16 @@ public class LeetCode39 {
         return ans;
     }
 
-    private void backTrace(int[] candidates, int start, int target){
-        if(sum > target){
+    private void backTrace(int[] candidates, int start, int target) {
+        if (sum > target) {
             return;
         }
-        if(sum == target){
+        if (sum == target) {
             ans.add(new ArrayList<>(path));
             return;
         }
         for (int i = start; i < candidates.length; i++) {
-            if(sum + candidates[i] > target){
+            if (sum + candidates[i] > target) {
                 break;
             }
             path.add(candidates[i]);

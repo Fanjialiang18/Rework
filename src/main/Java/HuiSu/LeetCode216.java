@@ -10,6 +10,7 @@ public class LeetCode216 {
     LinkedList<Integer> path;
 
     int sum = 0;
+
     public List<List<Integer>> combinationSum3(int k, int n) {
         ans = new ArrayList<>();
         path = new LinkedList<>();
@@ -17,18 +18,18 @@ public class LeetCode216 {
         return ans;
     }
 
-    private void backTrace(int k, int n, int start){
-        if(sum > n){
+    private void backTrace(int k, int n, int start) {
+        if (sum > n) {
             return;
         }
-        if(path.size() == k && sum == n){
+        if (path.size() == k && sum == n) {
             ans.add(new ArrayList<>(path));
             return;
         }
         for (int i = start; i < 10; i++) {
             path.add(i);
             sum += i;
-            backTrace(k, n ,i + 1);
+            backTrace(k, n, i + 1);
             sum -= path.getLast();
             path.removeLast();
         }

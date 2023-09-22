@@ -7,6 +7,7 @@ public class LeetCode93 {
     List<String> ans;
 
     int numOfPoint = 0;
+
     public List<String> restoreIpAddresses(String s) {
         ans = new ArrayList<>();
         backTrace(s, 0);
@@ -34,22 +35,22 @@ public class LeetCode93 {
         return true;
     }
 
-    private void backTrace(String s, int start){
-        if (numOfPoint == 3){
-            if(isValid(s, start, s.length() -1 )){
+    private void backTrace(String s, int start) {
+        if (numOfPoint == 3) {
+            if (isValid(s, start, s.length() - 1)) {
                 ans.add(s);
             }
             return;
         }
         for (int i = start; i < s.length(); i++) {
-            if(isValid(s, start, i)){
-                s = s.substring(0, i+1)+'.'+s.substring(i+1);
+            if (isValid(s, start, i)) {
+                s = s.substring(0, i + 1) + '.' + s.substring(i + 1);
                 numOfPoint++;
                 // 插入了.所以要+2而不是+1
                 backTrace(s, i + 2);
                 numOfPoint--;
                 // 删除.
-                s = s.substring(0, i+1) + s.substring(i+2);
+                s = s.substring(0, i + 1) + s.substring(i + 2);
             }
         }
     }
