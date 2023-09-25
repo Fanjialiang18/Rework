@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-public class LeetCode42 {
+public class LeetCode46 {
 
     List<List<Integer>> ans;
 
