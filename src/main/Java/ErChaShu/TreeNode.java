@@ -5,9 +5,9 @@ package main.Java.ErChaShu;
  * @date 2023/9/13 13:37
  */
 public class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
+    public int val;
+    public TreeNode left;
+    public TreeNode right;
 
     public TreeNode() {
     }
