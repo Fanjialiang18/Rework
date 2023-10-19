@@ -8,6 +8,7 @@ import java.util.Arrays;
  */
 public class LeetCode674 {
     public int findLengthOfLCIS(int[] nums) {
+        // dp[i]表示以下标i为结尾的连续递增的子序列长度
         int[] dp = new int[nums.length];
         int res = 1;
         Arrays.fill(dp, 1);
